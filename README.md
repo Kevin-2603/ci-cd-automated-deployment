@@ -31,24 +31,21 @@ An end-to-end DevOps automation showcase demonstrating Continuous Integration (C
                                     │  docker pull & run
                                     ▼
                      [ Live Deployment on WSL2 Environment ]
+```
+## ✨ Key Features
+* Multi-Stage Docker Building: Reduces image size and overhead using standard Alpine Linux images and non-root execution.
+* Automated CI Workflow: Triggers build, version tagging (latest and commit SHA), and container publishing on every push to the main branch.
+* Secure Token Authentication: Uses GitHub Repository Secrets (DOCKER_USERNAME & DOCKER_PASSWORD) to handle registry authentications securely.
+* Local CD Execution: Enables pull and deployment testing directly within a WSL environment without cloud infrastructure overhead.
 
-✨ Key Features
-- Multi-Stage Docker Building: Reduces image size and overhead using standard Alpine Linux images and non-root execution.
+## 🛠️ Tech Stack
+* Application: Node.js, Express.js
+* Containerization: Docker Engine, Docker Buildx
+* CI/CD Orchestration: GitHub Actions
+* Registry: Docker Hub
+* Development Environment: Windows 11 / WSL2 (Ubuntu)
 
-- Automated CI Workflow: Triggers build, version tagging (latest and commit SHA), and container publishing on every push to the main branch.
-
-- Secure Token Authentication: Uses GitHub Repository Secrets (DOCKER_USERNAME & DOCKER_PASSWORD) to handle registry authentications securely.
-
-- Local CD Execution: Enables pull and deployment testing directly within a WSL environment without cloud infrastructure overhead.
-
-🛠️ Tech Stack
-- Application: Node.js, Express.js
-- Containerization: Docker Engine, Docker Buildx
-- CI/CD Orchestration: GitHub Actions
-- Registry: Docker Hub
-- Development Environment: Windows 11 / WSL2 (Ubuntu)
-
-🚀 Local Deployment Guide (WSL2)
+## 🚀 Local Deployment Guide (WSL2)
 1. Prerequisites
 Ensure you have Docker Engine active inside your WSL2 setup:
 ```bash
