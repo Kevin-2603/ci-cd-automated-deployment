@@ -1,0 +1,16 @@
+{
+  "name": "ci-cd-automated-deployment",
+  "version": "1.0.0",
+  "description": "Production-Ready CI/CD Pipeline & Automated Deployment Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true
+}
